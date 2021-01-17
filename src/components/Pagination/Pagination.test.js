@@ -1,12 +1,12 @@
 import React from 'react'
 import { shallow, configure } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
-import App from './App'
+import { Pagination } from './Pagination'
 
 configure({ adapter: new Adapter() })
 
-describe('App', () => {
-  it('Expected App renders correctly', () => {
-    shallow(<App />)
+describe('Pagination', () => {
+  it('Expected Pagination renders correctly', () => {
+    shallow(<Pagination />)
   })
 })

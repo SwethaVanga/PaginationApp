@@ -3,10 +3,10 @@ import { useLocation, useHistory } from 'react-router-dom'
 import {
   Container as BootstrapContainer
 } from 'react-bootstrap'
-import { Result } from './Result'
-import { Search } from './Search'
-import { Pagination } from './Pagination'
-import { findBooks } from '../services'
+import { Result } from '../Result/Result'
+import { Search } from '../Search/Search'
+import { Pagination } from '../Pagination/Pagination'
+import { findBooks } from '../../services'
 
 
 export const BookContainer = () => {
