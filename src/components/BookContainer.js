@@ -25,7 +25,9 @@ export const BookContainer = () => {
   const [count, setCount] = useState(20)
   const [isLoading, setIsLoading] = useState(false)
 
-  //Handle updating the URL params
+  /**
+	 * Handle updating the URL params 
+	*/
   const handleQueryChange = async (isNewSearch = false) => {
     let params = new URLSearchParams(location?.search || '')
     if (isNewSearch) {
@@ -50,7 +52,9 @@ export const BookContainer = () => {
     setSearch(searchFilter)
   }
 
-  //Handle get books api call
+  /**
+	 * Handle get books api call
+	*/
   const getBooks = async () => {
     setIsLoading(true)
 
@@ -66,13 +70,17 @@ export const BookContainer = () => {
     setIsLoading(false)
   }
 
-  //Call getbooks, handleQueryChange when page, itemPerPage, search change
+  /**
+	 * Call getbooks, handleQueryChange when page, itemPerPage, search change
+	*/
   useEffect(() => {
     getBooks()
     handleQueryChange()
   }, [page, itemPerPage, search])
 
-  //setItemPerPage, roll back to page 1 
+  /**
+	 * setItemPerPage, roll back to page 1 
+	*/
   const setLimitPage = (limit) => {
     setItemPerPage(limit)
     setPage(1)

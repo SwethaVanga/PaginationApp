@@ -31,6 +31,7 @@ module.exports = {
       'never'
     ],
     'no-var': 1,
-    'eqeqeq': 1
+    'eqeqeq': 1,
+    'react/prop-types': 0,
   }
 }

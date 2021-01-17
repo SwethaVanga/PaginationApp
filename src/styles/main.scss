@@ -1,0 +1,18 @@
+//plugin
+@import './variables.scss';
+@import '~bootstrap/scss/bootstrap';
+
+.container{
+  text-align: center;
+  .container__bottom-action{
+    display: flex;
+    justify-content: space-between;
+    .bottom-action__limit-dropdown{
+      display: flex;
+      .limit-dropdown__dropdown{
+        width: 60px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
