@@ -12,6 +12,7 @@ export const Result = (props) => {
     <Table
       striped
       bordered
+      responsive
       hover
       className='container__table'>
       <thead>
