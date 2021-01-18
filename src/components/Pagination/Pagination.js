@@ -33,9 +33,11 @@ export const Pagination = (props) => {
       </div>
       <BootstrapPagination>
         <BootstrapPagination.Prev onClick={() => 1 !== page ? setPage(page - 1) : ''} />
-        {page !== 1 && <BootstrapPagination.Item onClick={() => setPage(page - 1)}>{page - 1}</BootstrapPagination.Item>}
+        {page !== 1 && 
+				<BootstrapPagination.Item onClick={() => setPage(page - 1)}>{page - 1}</BootstrapPagination.Item>}
         <BootstrapPagination.Item active>{page}</BootstrapPagination.Item>
-        {Math.ceil(count / itemPerPage) !== page && <BootstrapPagination.Item onClick={() => setPage(page + 1)}>{page + 1}</BootstrapPagination.Item>}
+        {Math.ceil(count / itemPerPage) !== page && 
+				<BootstrapPagination.Item onClick={() => setPage(page + 1)}>{page + 1}</BootstrapPagination.Item>}
         <BootstrapPagination.Next onClick={() => Math.ceil(count / itemPerPage) !== page ? setPage(page + 1) : ''} />
       </BootstrapPagination>
     </div>

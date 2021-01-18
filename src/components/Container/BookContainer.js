@@ -89,7 +89,7 @@ export const BookContainer = () => {
   return (
     <BootstrapContainer>
       <h1 className='container__heading'>
-        Books app
+        Books App with Pagination
       </h1>
       <Search
         searchFilter={searchFilter}

@@ -2,8 +2,12 @@
 @import './variables.scss';
 @import '~bootstrap/scss/bootstrap';
 
+$breakpoint-mobile: 640px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
 .container{
-  text-align: center;
+	text-align: center;
   .container__bottom-action{
     display: flex;
     justify-content: space-between;
